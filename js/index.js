@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street  Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -40,3 +40,88 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+for (let i = 1; i <= 6; i++){
+  document.getElementById('a' + i).textContent =  siteContent['nav']['nav-item-' + i];
+}
+
+
+//  ============= cta ================
+const headerH1 = document.getElementById('headerH1');
+headerH1.textContent = siteContent['cta']['h1'];
+
+const ctabtn = document.getElementById('ctabtn');
+ctabtn.textContent = siteContent['cta']['button'];
+
+const ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent['cta']['img-src'];
+
+
+//  =============== main Content =====================
+
+const featuresH4 = document.getElementById('featuresH4');
+featuresH4.textContent = siteContent["main-content"]["features-h4"];
+
+
+const featuresContent = document.getElementById("featuresContent");
+featuresContent.textContent = siteContent["main-content"]["features-content"];
+
+
+
+const aboutH4 = document.getElementById("aboutH4");
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+
+const aboutContent = document.getElementById("aboutContent");
+aboutContent.textContent = siteContent["main-content"]["about-content"];
+
+const middleImg = document.getElementById("middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+
+
+
+const servicesH4 = document.getElementById("servicesH4");
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesContent = document.getElementById("servicesContent");
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+
+
+const productH4 = document.getElementById("productH4");
+productH4.textContent = siteContent["main-content"]["product-h4"]
+
+const productContent = document.getElementById("productContent");
+productContent.textContent = siteContent["main-content"]["product-content"];
+
+
+const visionH4 = document.getElementById("visionH4");
+visionH4.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionContent = document.getElementById("visionContent");
+visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+
+
+ 
+//  ================== contact ===========
+
+const contactH4 = document.getElementById("contactH4");
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+const address = document.getElementById("address");
+address.textContent = siteContent["contact"]["address"];
+
+const phone = document.getElementById("phone");
+phone.textContent = siteContent["contact"]["phone"];
+
+const email = document.getElementById("email");
+email.textContent = siteContent["contact"]["email"];
+
+
+
+// ================= Footer ==================
+
+const footer = document.getElementById("footer");
+footer.textContent = siteContent["footer"]["copyright"];
